@@ -2,10 +2,14 @@ body{
     background-color: #ffffff;
 }
 
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 10px;
+}
+
 header{
     background-color: #ffffff;
-    width: 960px;
-    margin: 0 auto;
     border-bottom: 1px #cccccc solid;
 }
 
@@ -32,7 +36,12 @@ p{
 }
 
 content{
-    width: 960px;
     background-image: url(../images/cork-wallet.png);
     background-size: cover;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
